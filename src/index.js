@@ -1,6 +1,7 @@
 import './style.css';
 import { getAPIinfo } from './getAPIinfo';
 import {displayWeather} from './displayWeather';
+import { clearDOMelements } from './clearDOM';
 
 const searchBtn=document.querySelector('button');
 
@@ -14,6 +15,7 @@ initialDisplay();
 searchBtn.addEventListener('click', async e => {
     const location=document.querySelector('input').value;
     const weatherData= await getAPIinfo(location);
+    await clearDOMelements();
     await displayWeather(weatherData);
 } )
    
