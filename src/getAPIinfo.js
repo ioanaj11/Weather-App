@@ -1,5 +1,5 @@
 function getAPIinfo(location) {
-    return fetch(`http://api.weatherapi.com/v1/forecast.json?key=8425552e72174ff8b69160208230504&q=${location}&days=3&aqi=no&alerts=no`, {mode: 'cors'})
+    return fetch(`https://api.weatherapi.com/v1/forecast.json?key=8425552e72174ff8b69160208230504&q=${location}&days=3&aqi=no&alerts=no`, {mode: 'cors'})
       .then(function(response) {
         return response.json();
       })
