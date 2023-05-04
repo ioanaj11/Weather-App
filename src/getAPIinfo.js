@@ -7,7 +7,7 @@ function getAPIinfo(location) {
       .then(function(response) {
         console.log(response);
         const weatherData = {
-          'icon': response.current.condition.icon,
+          'icon': response.current.condition.icon.slice(-7),
           'text': response.current.condition.text,
           'temp_c': response.current.temp_c,
           'temp_f': response.current.temp_f,

@@ -110,7 +110,8 @@ function displayWeather(weatherDataObject){
     situated.textContent=`${weatherDataObject.region} ${weatherDataObject.country}`;
 
     //weather Icon
-    weatherIconImg.setAttribute('src', `../src/icons/weather/64x64/${weatherDataObject.is_day}/${weatherDataObject.icon.slice(-7)}`);
+    const weatherIcon = require(`./icons/weather/64x64/${weatherDataObject.is_day}/${weatherDataObject.icon}`);
+    weatherIconImg.setAttribute('src', `${weatherIcon}`);
 
     //secondary values
     const secondaryInfo=[
