@@ -1,3 +1,8 @@
+import temperatureIcon from './icons/thermometer.png';
+import humidityIcon from './icons/humidity.png';
+import chanceOfRainIcon from './icons/rainy.png';
+import windSpeedIcon from './icons/wind.png';
+
 function displayWeather(weatherDataObject){
     //background
     const main=document.getElementById('main');
@@ -112,19 +117,19 @@ function displayWeather(weatherDataObject){
         {'variable': feelsLike,
          'text': 'Feels like:',
          'value':`${weatherDataObject.feelslike_c}\xB0 C`,
-         'icon': '../src/icons/thermometer.png'},
+         'icon': temperatureIcon},
         {'variable': humidity,
          'text': 'Humidity:',
          'value': `${weatherDataObject.humidity}%`,  
-         'icon': '../src/icons/humidity.png'},
+         'icon': humidityIcon},
         {'variable': chanceOfRain,
          'text': 'Chance of rain:',
          'value': `${weatherDataObject.chanceOfRain}%`,
-         'icon': '../src/icons/rainy.png'},
+         'icon': chanceOfRainIcon},
         {'variable': windSpeed,
          'text': 'Wind speed',
          'value': `${weatherDataObject.wind_kph} kph`,
-         'icon': '../src/icons/wind.png'} ];
+         'icon': windSpeedIcon} ];
 
     for(let i=0; i<=3; i++){
         const icon=document.createElement('img');
