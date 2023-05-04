@@ -1,0 +1,182 @@
+/* meyer reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My styling*/
+body, html, #main, .default{
+	background-color: rgb(100, 100, 131);
+	margin:0px;
+	height:100%;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	background-size:cover;
+}
+
+#mainBox{
+    background-color: rgb(48, 48, 63, 0.6);
+    display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+	width:40%;
+	border-radius: 5px;
+	height:100%;
+}
+
+.clear{
+	background-image: url('../src/backround\ images/night-sky-wallpaper.jpg') ;
+}
+
+.sunny{
+	background-image: url('../src/backround\ images/sunny.jpg');
+}
+
+.cloudy{
+	background-image: url('../src/backround\ images/cloudy.jpg');
+}
+
+.partlyCloudy{
+	background-image: url('../src/backround\ images/partlyCloudy.jpg');	
+}
+
+.rainy{
+	background-image: url('../src/backround\ images/rain.jpg');
+}
+
+.mist{
+	background-image: url('../src/backround\ images/mist.jpg');
+}
+
+.snowy{
+	background-image: url('../src/backround\ images/snowing.jpeg');
+}
+
+.sleet{
+	background-image: url('../src/backround\ images/sleet.jpg');
+}
+
+.thunder{
+	background-image: url('../src/backround\ images/thunder.webp');
+}
+
+.heavyRain{
+	background-image: url('../src/backround\ images/heavy_rain.jpeg');
+}
+.error{
+	background-image: url('../src/backround\ images/error.jpg');;
+}
+
+#content{
+	font-size: 20px;
+	padding: 15px;
+}
+
+input{
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+#content button{
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+#mainTemperature{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	font-size: 90px;
+	color: white;
+}
+
+#weatherIconImg{
+	width: 150px;
+	height:auto;
+	margin: -25px 0px -20px 25px;
+}
+
+#description, #feelsLike, #humidity, #chanceOfRain, #windSpeed{
+	font-size: 22px;
+	color: white;
+	padding-bottom: 30px;
+	padding-left: 10px;
+}
+
+#location{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 25px;
+	color:white;
+	padding: 30px 0px;
+	}
+
+#place{
+	font-weight: 600;
+	font-size: 28px;
+}
+
+#secondaryInfo{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	padding-top: 30px;
+}
+
+#secondaryInfo>*>img{
+	width:1.3vw;
+	height:2vw;
+	padding:7px;
+}
+
+#secondaryInfo>*{
+	display: flex;
+}
+
+#secondaryInfo>*>:nth-child(2)>:nth-child(2){
+	font-size: 25px;
+	font-weight: 600;
+}

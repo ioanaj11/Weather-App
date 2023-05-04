@@ -1,0 +1,30 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "a simple weather app to implement using an API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioanaj11/Weather-App.git"
+  },
+  "keywords": [
+    "weather",
+    "app",
+    "API"
+  ],
+  "author": "ioanaj11",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioanaj11/Weather-App/issues"
+  },
+  "homepage": "https://github.com/ioanaj11/Weather-App#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
