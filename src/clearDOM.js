@@ -11,8 +11,8 @@ function clearDOMelements(){
 
     const mainTemperature=document.getElementById('mainTemperature');
     const changeCorFBtn=document.getElementById('changeCorFBtn');
-    
-    mainTemperature.removeChild(changeCorFBtn);
+
+    if (changeCorFBtn != null ) mainTemperature.removeChild(changeCorFBtn);
 }
 
 export {clearDOMelements}
