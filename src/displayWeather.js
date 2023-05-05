@@ -6,9 +6,17 @@ import { clearDOMelements } from './clearDOM';
 
 function displayWeather(weatherDataObject){
     //background
-    const main=document.getElementById('main');
-    main.classList.remove('default');
-
+    let main=document.getElementById('main');
+    
+    if (main.classList.contains('celsius')){
+        main.removeAttribute('class');
+        main.classList.add('celsius');
+         }
+         else{
+            main.removeAttribute('class');
+            main.classList.add('fahrenheit')
+         };
+         
     const temperature=document.getElementById('temperature');
     const description=document.getElementById('description');
     const place=document.getElementById('place');
