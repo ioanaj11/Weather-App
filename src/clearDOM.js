@@ -9,6 +9,10 @@ function clearDOMelements(){
      }
     }
 
+    const mainTemperature=document.getElementById('mainTemperature');
+    const changeCorFBtn=document.getElementById('changeCorFBtn');
+    
+    mainTemperature.removeChild(changeCorFBtn);
 }
 
 export {clearDOMelements}
