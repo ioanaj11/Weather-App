@@ -194,3 +194,26 @@ input{
 	font-size: 22px;
 	font-weight: 600;
 }
+
+#forecastBtnsDiv{
+	align-self: flex-start;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#forecastBtnsDiv button{
+	font-size: 22px;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	text-decoration: underline;
+}
+
+#forecastBtnsDiv div{
+	font-size: 30px;
+	color: white;
+	padding: 0px 10px;
+}

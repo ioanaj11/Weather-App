@@ -13,6 +13,10 @@ function clearDOMelements(){
     const changeCorFBtn=document.getElementById('changeCorFBtn');
 
     if (changeCorFBtn != null ) mainTemperature.removeChild(changeCorFBtn);
+
+    if (mainBox.lastElementChild.id === 'forecastBtnsDiv')
+        {const mainBox=document.getElementById('mainBox');
+        mainBox.removeChild(mainBox.lastElementChild)}
 }
 
 export {clearDOMelements}
