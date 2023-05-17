@@ -1,6 +1,13 @@
+import { generateSliders } from "./generateSliders";
+
 const mainBox=document.getElementById('mainBox');
 
-function displayForecast(){
+function displayForecast(weatherDataObject){
+    generateForecastButtons();
+    generateSliders(weatherDataObject);
+}
+
+function generateForecastButtons(){
     const forecastBtnsDiv=document.createElement('div');
     forecastBtnsDiv.setAttribute('id', 'forecastBtnsDiv');
     mainBox.appendChild(forecastBtnsDiv);

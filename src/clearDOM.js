@@ -1,6 +1,6 @@
 function clearDOMelements(){    
-    
-    const secondaryInfoDivChildren=document.querySelectorAll('#secondaryInfo>*')
+    const mainBox=document.getElementById('mainBox');
+    const secondaryInfoDivChildren=document.querySelectorAll('#secondaryInfo>*');
     secondaryInfoDivChildren.forEach(childDiv=> clear(childDiv));
    
    function clear(divElement){
@@ -14,9 +14,14 @@ function clearDOMelements(){
 
     if (changeCorFBtn != null ) mainTemperature.removeChild(changeCorFBtn);
 
-    if (mainBox.lastElementChild.id === 'forecastBtnsDiv')
-        {const mainBox=document.getElementById('mainBox');
-        mainBox.removeChild(mainBox.lastElementChild)}
+    const forecastBtnsDiv=document.getElementById('forecastBtnsDiv');
+    if (forecastBtnsDiv !=null)       
+        mainBox.removeChild(forecastBtnsDiv);
+
+    const sliderContainer=document.getElementById('slider-container');
+    if (sliderContainer !=null)
+        mainBox.removeChild(sliderContainer);
+   
 }
 
 export {clearDOMelements}

@@ -3,17 +3,10 @@ import humidityIcon from './icons/humidity.png';
 import chanceOfRainIcon from './icons/rainy.png';
 import windSpeedIcon from './icons/wind.png';
 
-const temperature=document.getElementById('temperature');
-const description=document.getElementById('description');
-const place=document.getElementById('place');
-const situated=document.getElementById('situated');
-const weatherIconImg=document.getElementById('weatherIconImg');
 const feelsLike=document.getElementById('feelsLike');
 const humidity=document.getElementById('humidity');
 const chanceOfRain=document.getElementById('chanceOfRain');
 const windSpeed=document.getElementById('windSpeed');
-const mainTemperature=document.getElementById('mainTemperature');
-const weatherIconDiv=document.getElementById('weatherIcon');
 
 function displaySecondaryCurrentWeather(weatherDataObject){
     

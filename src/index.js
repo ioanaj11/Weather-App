@@ -4,7 +4,6 @@ import {displayWeather} from './displayWeather';
 import { clearDOMelements } from './clearDOM';
 
 const searchBtn=document.querySelector('button');
-const main=document.getElementById('main');
 
 async function initialDisplay(){
     const weatherData= await getAPIinfo('Oradea');

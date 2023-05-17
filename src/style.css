@@ -217,3 +217,70 @@ input{
 	color: white;
 	padding: 0px 10px;
 }
+
+#slider-container {
+	display: flex;
+	align-items: center;
+	width:80%;
+	margin-top:60px;
+	overflow: hidden;
+  }
+
+#slider-images{
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 200px;
+	transition: margin-left 0.3s ease-in-out;
+}
+
+#slider-images img{
+	width:100px;
+	height:100px;
+	margin: 10px;
+}
+
+#slider-container button{
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	}
+
+#slider-container button:hover{
+	transform: scale(1.5) perspective(1px)
+}
+
+#slider-container button img{
+	height:50px;
+	width: 30px;
+}
+
+.slider-prev{
+	left:31vw;
+}
+
+.slider-next{
+	left: 67vw;
+}
+
+.imgDiv{
+	display:flex;
+	flex-direction: column;
+	color: white;
+	font-size: 20px;
+	font-weight:550;
+	justify-content: center;
+	align-items: center;
+}
+
+#chanceOfRainDiv{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#chanceOfRainDiv img{
+	width: 20px;
+	height:auto;
+}

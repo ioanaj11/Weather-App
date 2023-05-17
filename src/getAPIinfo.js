@@ -20,7 +20,10 @@ function getAPIinfo(location) {
           'country': response.location.country,
           'is_day': response.current.is_day,
           'humidity': response.current.humidity,
-          'chanceOfRain': response.forecast.forecastday[0].day.daily_chance_of_rain
+          'chanceOfRain': response.forecast.forecastday[0].day.daily_chance_of_rain,
+          'hourlyForecast0': response.forecast.forecastday[0].hour,
+          'hourlyForecast1': response.forecast.forecastday[1].hour,
+          'localTime': response.location.localtime.slice(-5)
         };
         return weatherData;
       })

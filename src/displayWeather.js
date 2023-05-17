@@ -36,8 +36,7 @@ function displayWeather(weatherDataObject){
     displaySecondaryCurrentWeather(weatherDataObject);
     
     //daily/hourly forecast buttons
-    displayForecast();
-
+    displayForecast(weatherDataObject);
 }
 
 export {displayWeather}
