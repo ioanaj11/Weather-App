@@ -2,6 +2,7 @@ import { backgroundChanger } from './backgroundChanger';
 import { displaySecondaryCurrentWeather } from './displaySecondaryCurrentWeather';
 import { displayForecast } from './displayForecast';
 import { generateCorFBtn } from './generateCorFBtn';
+import { displayLastUpdateTime } from './displayLastUpdateTime';
 
     const temperature=document.getElementById('temperature');
     const description=document.getElementById('description');
@@ -35,8 +36,11 @@ function displayWeather(weatherDataObject){
     //secondary values
     displaySecondaryCurrentWeather(weatherDataObject);
     
-    //daily/hourly forecast buttons
+    //daily/hourly forecast
     displayForecast(weatherDataObject);
+
+    //Last update
+    displayLastUpdateTime(weatherDataObject);
 }
 
 export {displayWeather}

@@ -222,7 +222,7 @@ input{
 	display: flex;
 	align-items: center;
 	width:80%;
-	margin-top:70px;
+	margin-top:50px;
 	overflow: hidden;
   }
 
@@ -283,4 +283,10 @@ input{
 #chanceOfRainDiv img{
 	width: 20px;
 	height:auto;
+}
+
+#lastUpdateTimeDiv{
+	color: white;
+	font-size: 18px;
+	margin-top: 120px;
 }

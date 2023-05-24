@@ -22,6 +22,9 @@ function clearDOMelements(){
     if (sliderContainer !=null)
         mainBox.removeChild(sliderContainer);
    
+    const lastUpdateTimeDiv=document.getElementById('lastUpdateTimeDiv');
+    if (lastUpdateTimeDiv !=null)
+        mainBox.removeChild(lastUpdateTimeDiv);
 }
 
 export {clearDOMelements}
