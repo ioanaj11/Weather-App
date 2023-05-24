@@ -23,7 +23,8 @@ function getAPIinfo(location) {
           'chanceOfRain': response.forecast.forecastday[0].day.daily_chance_of_rain,
           'hourlyForecast0': response.forecast.forecastday[0].hour,
           'hourlyForecast1': response.forecast.forecastday[1].hour,
-          'localTime': response.location.localtime.slice(-5)
+          'localTime': response.location.localtime.slice(-5),
+          'currentDay': response.location.localtime.slice(0,10)
         };
         return weatherData;
       })
