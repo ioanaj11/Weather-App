@@ -14,17 +14,23 @@ function displayForecast(weatherDataObject){
     const hourlyForecastBtn=document.getElementById('hourlyForecastBtn');
     const dailyForecastBtn=document.getElementById('dailyForecastBtn');
 
+    hourlyForecastBtn.classList.add('underlined');
+
     hourlyForecastBtn.addEventListener('click', e=>{
         mainBox.removeChild(sliderContainer);
         generateSliderContainer();
         generateSliders(weatherDataObject, "hourly");
         generatePreviousNextButtons();
+        hourlyForecastBtn.classList.add('underlined');
+        dailyForecastBtn.classList.remove('underlined');
         })
   
     dailyForecastBtn.addEventListener('click', e=> {
         mainBox.removeChild(sliderContainer);
         generateSliderContainer();
-        generateSliders(weatherDataObject, "daily")
+        generateSliders(weatherDataObject, "daily");
+        dailyForecastBtn.classList.add('underlined');
+        hourlyForecastBtn.classList.remove('underlined');
         });
 }
 
@@ -77,13 +83,21 @@ function generatePreviousNextButtons(){
         sliderImages.style.marginLeft = `${Math.max(parseInt(sliderImages.style.marginLeft || 0) - 92)}px`;
         });
 
-        mainBox.appendChild(sliderContainer);
+        const lastUpdateTimeDiv=document.getElementById('lastUpdateTimeDiv');
+
+        if (lastUpdateTimeDiv !=null) mainBox.insertBefore(sliderContainer, lastUpdateTimeDiv);
+            else mainBox.appendChild(sliderContainer);
     }
 
     function generateSliderContainer(){
         sliderContainer=document.createElement('div');
         sliderContainer.setAttribute('id', 'slider-container');
-        mainBox.appendChild(sliderContainer);
+        
+        const lastUpdateTimeDiv=document.getElementById('lastUpdateTimeDiv');
+
+        if (lastUpdateTimeDiv !=null) mainBox.insertBefore(sliderContainer, lastUpdateTimeDiv);
+            else mainBox.appendChild(sliderContainer);
+            
     }
 
 export {displayForecast}

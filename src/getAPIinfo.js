@@ -25,7 +25,8 @@ function getAPIinfo(location) {
           'hourlyForecast1': response.forecast.forecastday[1].hour,
           'localTime': response.location.localtime.slice(-5),
           'currentDay': response.location.localtime.slice(0,10),
-          'lastUpdateTime': response.current.last_updated
+          'lastUpdateTime': response.current.last_updated,
+          'threeDaysForecast': response.forecast.forecastday
         };
         return weatherData;
       })

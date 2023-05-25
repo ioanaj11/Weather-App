@@ -209,6 +209,9 @@ input{
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
+}
+
+.underlined{
 	text-decoration: underline;
 }
 
@@ -221,6 +224,7 @@ input{
 #slider-container {
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 	width:80%;
 	margin-top:50px;
 	overflow: hidden;
@@ -228,7 +232,6 @@ input{
 
 #slider-images{
 	display: flex;
-	align-items: center;
 	width: 80%;
 	height: 200px;
 	transition: margin-left 0.3s ease-in-out;
@@ -238,6 +241,10 @@ input{
 	width:100px;
 	height:100px;
 	margin: 10px;
+}
+
+#dailyForecastDiv>div>div{
+	margin-right: 4vw;
 }
 
 #slider-container button{
