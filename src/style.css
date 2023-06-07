@@ -56,6 +56,7 @@ body, html, #main, .default{
 }
 
 #mainBox{
+	position: relative;
     background-color: rgb(48, 48, 63, 0.6);
     display: flex;
 	flex-direction: column;
@@ -109,9 +110,63 @@ body, html, #main, .default{
 	background-image: url('../src/backround\ images/error.jpg');;
 }
 
+#presetLocationsDiv{
+	margin-top: 30px;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background-color: rgb(48, 48, 63, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height:fit-content;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+	transition: transform 0.5s ease;
+}
+
+.invisible{
+	visibility: hidden;
+	transform: translateX(100px);
+}
+
+#presetLocationsDiv li{
+	padding: 10px 30px;
+	border-radius: 5px;
+	}
+
+#presetLocationsDiv li:hover{
+	background-color: rgb(80, 80, 95);
+	cursor: pointer;
+}
+
 #content{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 20px;
 	padding: 15px;
+	width: 95%;
+}
+
+#locationDropDownMenu{
+	position:absolute;
+	left: 0px;
+	
+}
+
+#locationDropDownMenu :hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#locationDropDownMenu img{
+	width:23px;
+	height:auto;
+	padding: 15px;
+	
 }
 
 input{
@@ -244,7 +299,7 @@ input{
 }
 
 #dailyForecastDiv>div>div{
-	margin-right: 4vw;
+	margin-right: 4.3vw;
 }
 
 #slider-container button{
@@ -264,11 +319,11 @@ input{
 }
 
 .slider-prev{
-	left:31vw;
+	left: 1vw;
 }
 
 .slider-next{
-	left: 67vw;
+	right: 1vw;
 }
 
 .imgDiv{
