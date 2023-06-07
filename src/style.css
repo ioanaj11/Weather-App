@@ -123,7 +123,7 @@ body, html, #main, .default{
 	color: white;
 	font-weight: 500;
 	font-size: 20px;
-	transition: transform 0.5s ease;
+	transition: transform 0.7s ease;
 }
 
 .invisible{
