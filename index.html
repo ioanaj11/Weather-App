@@ -9,38 +9,51 @@
 </head>
 <body>
     <div id="main" class="default celsius">
-    <div id="mainBox" class="mainBox">
-        <div id="content"> 
-            <form>
-                 <input type="search" placeholder="location">
-                 <button type="button">Search</button>
-            </form>
+        <div id="presetLocationsDiv" class="invisible">
+            <ul>
+                <li id="forecastForLocation1">Oradea</li>
+                <li id="forecastForLocation2">London</li>
+                <li id="forecastForLocation3">New York</li>
+                <li id="forecastForLocation4">Berlin</li>
+                <li id="forecastForLocation5">Tokyo</li>
+            </ul>
         </div>
-
-        <div id="location">
-            <div id="place"></div>
-            <div id="situated"></div>
-        </div>
-        
-        <div id="mainTemperature">
-            <div>
-                <div id="temperature"></div>
-                <div id="description"></div>
-            </div>
-            <div id="weatherIcon">
-                <img id="weatherIconImg">
-            </div>
+        <div id="mainBox" class="mainBox">
+            <div id="content"> 
+                <div id="locationDropDownMenu">
+                   <img src="../src/icons/menu-button-of-three-horizontal-lines.png">
+                </div>
             
-        </div>
- 
-        <div id="secondaryInfo">
-            <div id="feelsLike"></div>
-            <div id="humidity"></div>
-            <div id="chanceOfRain"></div>
-            <div id="windSpeed"></div>
-        </div>
+                <form>
+                    <input type="search" placeholder="location">
+                    <button type="button">Search</button>
+                </form>
+            </div>
 
-    </div>
+            <div id="location">
+                <div id="place"></div>
+                <div id="situated"></div>
+            </div>
+        
+            <div id="mainTemperature">
+                <div>
+                    <div id="temperature"></div>
+                    <div id="description"></div>
+                </div>
+                <div id="weatherIcon">
+                    <img id="weatherIconImg">
+                </div>
+            
+            </div>
+ 
+            <div id="secondaryInfo">
+                <div id="feelsLike"></div>
+                <div id="humidity"></div>
+                <div id="chanceOfRain"></div>
+                <div id="windSpeed"></div>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
