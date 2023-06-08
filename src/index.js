@@ -2,6 +2,7 @@ import './style.css';
 import { getAPIinfo } from './getAPIinfo';
 import {displayWeather} from './displayWeather';
 import { clearDOMelements } from './clearDOM';
+import dropDownMenuImg from './icons/menu-button-of-three-horizontal-lines.png';
 
 const searchBtn=document.querySelector('button');
 const locationInput=document.querySelector('input');
