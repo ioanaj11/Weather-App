@@ -80,7 +80,7 @@ function generatePreviousNextButtons(){
         });
 
         nextBtn.addEventListener('click', () => {
-        sliderImages.style.marginLeft = `${Math.max(parseInt(sliderImages.style.marginLeft || 0) - 92)}px`;
+        sliderImages.style.marginLeft = `${Math.max(parseInt(sliderImages.style.marginLeft || 0) - 92, -840)}px`;
         });
 
         const lastUpdateTimeDiv=document.getElementById('lastUpdateTimeDiv');

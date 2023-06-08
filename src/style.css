@@ -289,7 +289,7 @@ input{
 	display: flex;
 	width: 80%;
 	height: 200px;
-	transition: margin-left 0.3s ease-in-out;
+	transition: margin-left 0.2s ease-in-out;
 }
 
 #slider-images img{

@@ -13,9 +13,9 @@ function generateSliders(weatherDataObject, hourlyOrDaily){
           let day=0;
           let j=Number(currentHour)+1;
            
-          for (let i=counter; i<=18; i++){
+          for (let i=counter; i<=12; i++){
                               
-            while ((j<24)&&(counter<18)) {
+            while ((j<24)&&(counter<12)) {
               const imgDiv=document.createElement('div');
               imgDiv.classList.add('imgDiv');
 
