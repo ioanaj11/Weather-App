@@ -9,6 +9,10 @@ const locationInput=document.querySelector('input');
 const locationDropDownMenu=document.getElementById('locationDropDownMenu');
 const presetLocationsDiv=document.getElementById('presetLocationsDiv');
 
+ const locationDropDownMenuImg=document.createElement('img');
+locationDropDownMenuImg.setAttribute('src', dropDownMenuImg);
+locationDropDownMenu.appendChild(locationDropDownMenuImg);
+
 async function initialDisplay(){
     const weatherData= await getAPIinfo('Oradea');
     await displayWeather(weatherData);
