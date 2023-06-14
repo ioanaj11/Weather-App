@@ -62,17 +62,19 @@ function generateSliders(weatherDataObject, hourlyOrDaily){
               dailyForecastDiv.setAttribute('id','dailyForecastDiv');
 
               const currentDay=new Date().getDay();
-              
-              let daysArray=['Sunday','Monday','Tuesday','Wednedsay','Thursday','Friday','Saturday'];
+                           
+              let daysArray=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
               daysArray[currentDay]='Today';
-              daysArray[currentDay+1]='Tomorrow';
+              if (currentDay<6) daysArray[currentDay+1]='Tomorrow'
+                else daysArray[0]='Tomorrow'
 
               for(let i=0;i<3;i++){
                 const imgDiv=document.createElement('div');
                 imgDiv.classList.add('imgDiv');
 
                 const dayDiv=document.createElement('div');
-                dayDiv.textContent=daysArray[currentDay+i];
+                if (currentDay+i<daysArray.length) dayDiv.textContent=daysArray[currentDay+i]
+                  else dayDiv.textContent=daysArray[currentDay+i-7];
                 imgDiv.appendChild(dayDiv);
 
                 const weatherIcon = require(`./icons/weather/64x64/${weatherDataObject.is_day}/${weatherDataObject[`threeDaysForecast`][i]['day']['condition']['icon'].slice(-7)}`);
